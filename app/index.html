@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T-Account</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css">
+	<link href="../node_modules/toastr/package/package/toastr.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<!-- Title -->
+
+<section class="container">
+	<div class="row">
+		<h1 id="title" class="col-xs-12">Business 2257 T-Account</h1>
+	</div>
+</section>
+
+<!-- Inputs -->
+
+<section id="fy_inputs" class="container">
+
+<!-- Case Name -->
+
+	<div class="row">
+		<span class="col-xs-2"></span>
+		<div class="col-xs-8">
+			<input id="case_name" class="case_name" type="text" name="case_name" placeholder="Case Name">
+		</div>
+		<span class="col-xs-2"></span>
+	</div>
+
+<!-- Fiscal Year Beginning -->
+
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<h5>Fiscal Year Beginning</h5>
+			<div class="row">
+				<div class="form-group col-xs-4">	
+					<select class="form-control" id="fyb_month">
+					    <option value="0">January</option>
+					    <option value="1">February</option>
+					    <option value="2">March</option>
+					    <option value="3">April</option>
+					    <option value="4">May</option>
+					    <option value="5">June</option>
+					    <option value="6">July</option>
+					    <option value="7">August</option>
+					    <option value="8">September</option>
+					    <option value="9">October</option>
+					    <option value="10">November</option>
+					    <option value="11">December</option>
+					 </select>
+				</div>
+				<div class="form-group col-xs-4">	
+					<select class="form-control" id="fyb_day">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					    <option>5</option>
+					    <option>6</option>
+					    <option>7</option>
+					    <option>8</option>
+					    <option>9</option>
+					    <option>10</option>
+					    <option>11</option>
+					    <option>12</option>
+					    <option>13</option>
+					    <option>14</option>
+					    <option>15</option>
+					    <option>16</option>
+					    <option>17</option>
+					    <option>18</option>
+					    <option>19</option>
+					    <option>20</option>
+					    <option>21</option>
+					    <option>22</option>
+					    <option>23</option>
+					    <option>24</option>
+					    <option>25</option>
+					    <option>26</option>
+					    <option>27</option>
+					    <option>28</option>
+					    <option>29</option>
+					    <option>30</option>
+					    <option>31</option>
+					 </select>
+				</div>
+				<div class="col-xs-4">
+					<input id="fyb_year" type="text" placeholder="2016" name="fyb_year">
+				</div>
+			</div>
+		</div>
+
+<!-- Fiscal Year End -->
+
+		<div class="col-xs-12 col-md-6">
+			<h5>Fiscal Year End</h5>
+			<div class="row">
+				<div class="form-group col-xs-4">	
+					<select class="form-control" id="fye_month">
+					    <option value="0">January</option>
+					    <option value="1">February</option>
+					    <option value="2">March</option>
+					    <option value="3">April</option>
+					    <option value="4">May</option>
+					    <option value="5">June</option>
+					    <option value="6">July</option>
+					    <option value="7">August</option>
+					    <option value="8">September</option>
+					    <option value="9">October</option>
+					    <option value="10">November</option>
+					    <option value="11">December</option>
+					 </select>
+				</div>
+				<div class="form-group col-xs-4">	
+					<select class="form-control" id="fye_day">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					    <option>5</option>
+					    <option>6</option>
+					    <option>7</option>
+					    <option>8</option>
+					    <option>9</option>
+					    <option>10</option>
+					    <option>11</option>
+					    <option>12</option>
+					    <option>13</option>
+					    <option>14</option>
+					    <option>15</option>
+					    <option>16</option>
+					    <option>17</option>
+					    <option>18</option>
+					    <option>19</option>
+					    <option>20</option>
+					    <option>21</option>
+					    <option>22</option>
+					    <option>23</option>
+					    <option>24</option>
+					    <option>25</option>
+					    <option>26</option>
+					    <option>27</option>
+					    <option>28</option>
+					    <option>29</option>
+					    <option>30</option>
+					    <option>31</option>
+					 </select>
+				</div>
+				<div class="col-xs-4">
+					<input id="fye_year" type="text" placeholder="2017" name="fye_year">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<button id="submit_fy" class="btn btn-primary submit col-xs-12">Submit</button>
+	</div>
+</section>
+
+<!-- T-Accounts -->
+
+<section id="task_menu">
+	<div class="row">
+		<div id="t_accounts" class="col-xs-12 col-md-9">
+
+<!-- Print Inputs -->
+
+			<section id="fy_print_inputs" class="containers">
+				<div class="row">
+					<h3 id="print_case_name" class="col-xs-12"></h3>
+					<h5 id="print_fy" class="col-xs-12"></h5>
+			</section>
+
+<!-- Permanent Accounts -->
+
+			<div id="permanent_accounts" class="row">
+				<div id="asset_accounts" class="col-xs-12 col-md-8 account">
+					<h7>Assets</h7>
+					<div class="row">
+						<div class="col-xs-12 col-sm-3">	
+							<table>
+								<tr>
+									<th class="account_name" colspan="3">
+									</th>
+								</tr>
+								<tr class="transaction">
+									<td>
+									</td>
+									<td class="middle"></td>
+									<td>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<div class="row smaller_accounts">
+								<div class="col-xs-12 col-sm-6">
+									
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3">
+						</div>
+					</div>	
+				</div>
+				<div id="equity_accounts" class="col-xs-12 col-md-4 account">
+					<h7>Liabilities</h7>			
+				</div>
+			</div>
+
+<!-- Temporary Accounts -->
+
+			<div id="temporary_accounts" class="row">
+				<div id="expense_accounts" class="col-xs-12 col-md-8 account">
+					<h7>Expenses</h7>	
+				</div>
+				<div id="revenue_accounts" class="col-xs-12 col-md-4 account">
+				<h7>Revenue</h7>	
+				</div>
+			</div>
+		</div>
+
+		<!-- Toolbar -->
+
+		<section id="toolbar" class="col-xs-12 col-md-3">
+			<div class="row">
+				<h5 id="toolbar_title">Post Opening Balances</h5>
+				<h7>Asset Accounts</h7>
+				<div class="row">
+					<input type="text" placeholder="Account" class="col-xs-4">
+					<input type="text" placeholder="O/B" class="col-xs-4">
+					<select class="col-xs-4">
+						<option>Debit</option>
+						<option>Credit</option>
+					</select>
+				</div>
+				<button id="post" class="btn btn-primary submit col-xs-12">Enter Opening Balances</button>
+			</div>
+		</section>
+	</div>
+</section>
+
+<!-- dependencies -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../node_modules/toastr/package/package/toastr.js"></script>
+
+<!-- app js -->
+<script type="text/javascript" src="js/reference.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/client.js"></script>
+
+
+</body>
+</html>

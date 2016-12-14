@@ -1,0 +1,102 @@
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+html,body {
+	height: 100%;
+	margin: 0px;
+}
+
+.row {
+	text-align: center;
+	margin: 10px;
+}
+
+input {
+	width: 100%;
+	text-align: center;
+}
+
+.case_name {
+	margin: auto;
+	width: 100%;
+}
+
+#fy_print_inputs {
+	cursor: pointer;
+}
+
+#task_menu {
+/*	display: none;*/
+	height: 100%;
+}
+
+#title,#fy_inputs{
+	display: none;
+}
+
+#task_menu h7 {
+	text-decoration: underline;
+}
+
+#asset_accounts,#equity_accounts,#expense_accounts,#revenue_accounts  {
+	border: solid 1px black;
+}
+
+#toolbar {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	height: 100%;
+	background-color: #9BE8E1;
+	text-align: center;
+	padding: 10px;
+}
+
+#toolbar_title,#toolbar .row h7 {
+	margin: auto;
+}
+
+#toolbar .row input {
+	font-size: 10px;
+}
+
+.account_name {
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+
+.middle {
+	padding: 0px;
+	border: 1px solid black;
+}
+
+th,td {
+	text-align: center;
+}
+
+th {
+	cursor: pointer;
+}
+
+td {
+	padding: 5px;
+}
+
+.smaller_accounts {
+	margin: 0px;
+}
+
+
